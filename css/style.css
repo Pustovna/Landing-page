@@ -196,7 +196,7 @@ a {
   width: 22px;
   height: 21px;
   cursor: pointer;
-  margin-right: 6px;
+  border: 3px solid #fff;
   display: block;
 }
 .places-rating__check {
@@ -205,7 +205,7 @@ a {
   height: 21px;
   display: block;
   cursor: pointer;
-  margin-right: 6px;
+  border: 3px solid #fff;
 }
 .places-description {
   display: none;

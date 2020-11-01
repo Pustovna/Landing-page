@@ -10,7 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="hover card movement" />
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="hover card movement">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cards.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +118,15 @@
       <workItem from="1604156675588" duration="1276000" />
       <workItem from="1604158522173" duration="1540000" />
       <workItem from="1604164312970" duration="1820000" />
-      <workItem from="1604225141180" duration="306000" />
+      <workItem from="1604225141180" duration="825000" />
+      <workItem from="1604226948433" duration="1638000" />
+      <workItem from="1604229181826" duration="1281000" />
+      <workItem from="1604231129235" duration="1686000" />
+      <workItem from="1604232937311" duration="1433000" />
+      <workItem from="1604234745788" duration="1664000" />
+      <workItem from="1604237161054" duration="1614000" />
+      <workItem from="1604238966634" duration="151000" />
+      <workItem from="1604244341140" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -128,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604225423275</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hover card movement">
+      <created>1604225599907</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604225599907</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,17 +217,19 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1602450683295" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1602533118066">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state x="496" y="294" key="Vcs.Push.Dialog.v2" timestamp="1604225607166">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state x="496" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1604225607166" />
     <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1602533118066" />
-    <state x="728" y="437" key="scopes" timestamp="1602449890751">
+    <state x="728" y="437" key="scopes" timestamp="1604235523717">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="728" y="437" key="scopes/0.23.1792.1097@0.23.1792.1097" timestamp="1602449890751" />
-    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1601840028420">
+    <state x="728" y="437" key="scopes/0.23.1792.1097@0.23.1792.1097" timestamp="1604235523717" />
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1604238257181">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1601840028420" />
+    <state x="561" y="250" width="670" height="691" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1604232460039" />
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1604238257181" />
   </component>
 </project>
