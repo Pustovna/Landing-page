@@ -10,7 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="" />
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="Desktop version: travel around, page with cards.">
+      <change afterPath="$PROJECT_DIR$/js/cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +29,7 @@
       <list>
         <option value="CSS File" />
         <option value="Sass File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -90,8 +99,36 @@
       <workItem from="1602449189510" duration="621000" />
       <workItem from="1602449834003" duration="1126000" />
       <workItem from="1602530145974" duration="1755000" />
-      <workItem from="1602531954019" duration="926000" />
+      <workItem from="1602531954019" duration="1441000" />
+      <workItem from="1602574627521" duration="2262000" />
+      <workItem from="1602576959221" duration="1594000" />
+      <workItem from="1602578776491" duration="1810000" />
+      <workItem from="1602580601945" duration="621000" />
+      <workItem from="1602599377048" duration="124000" />
+      <workItem from="1602940507135" duration="33000" />
+      <workItem from="1603978513623" duration="1600000" />
+      <workItem from="1603980366412" duration="1408000" />
+      <workItem from="1603982236238" duration="1334000" />
+      <workItem from="1603994797062" duration="926000" />
+      <workItem from="1603996647436" duration="1675000" />
+      <workItem from="1603998467097" duration="571000" />
+      <workItem from="1604130744869" duration="998000" />
+      <workItem from="1604132593214" duration="952000" />
+      <workItem from="1604134401120" duration="394000" />
+      <workItem from="1604152650265" duration="1575000" />
+      <workItem from="1604154456911" duration="1930000" />
+      <workItem from="1604156675588" duration="1276000" />
+      <workItem from="1604158522173" duration="1540000" />
+      <workItem from="1604164312970" duration="1820000" />
     </task>
+    <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
+      <created>1602533067679</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602533067679</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +146,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Desktop version: travel around, page with cards." />
+    <option name="LAST_COMMIT_MESSAGE" value="Desktop version: travel around, page with cards." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="530" y="245" key="#Inspections" timestamp="1603997600728">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="530" y="245" key="#Inspections/0.0.1792.1120@0.0.1792.1120" timestamp="1603997600728" />
     <state x="496" y="237" key="#Intentions" timestamp="1601830963788">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -126,26 +171,34 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="548" y="357" width="760" height="665" key="EditFileWatcherDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1602449982075" />
-    <state width="1771" height="296" key="GridCell.Tab.0.bottom" timestamp="1602530429997">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state width="1771" height="310" key="GridCell.Tab.0.bottom" timestamp="1604133623938">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state width="1771" height="310" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623938" />
     <state width="1771" height="296" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1602530429997" />
-    <state width="1771" height="296" key="GridCell.Tab.0.center" timestamp="1602530429996">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state width="1771" height="310" key="GridCell.Tab.0.center" timestamp="1604133623937">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state width="1771" height="310" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623937" />
     <state width="1771" height="296" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1602530429996" />
-    <state width="1771" height="296" key="GridCell.Tab.0.left" timestamp="1602530429996">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state width="1771" height="310" key="GridCell.Tab.0.left" timestamp="1604133623936">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state width="1771" height="310" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623936" />
     <state width="1771" height="296" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1602530429996" />
-    <state width="1771" height="296" key="GridCell.Tab.0.right" timestamp="1602530429997">
-      <screen x="0" y="23" width="1792" height="1097" />
+    <state width="1771" height="310" key="GridCell.Tab.0.right" timestamp="1604133623937">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
+    <state width="1771" height="310" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623937" />
     <state width="1771" height="296" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1602530429997" />
     <state x="397" y="210" key="SettingsEditor" timestamp="1602450683295">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1602450683295" />
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1602533118066">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1602533118066" />
     <state x="728" y="437" key="scopes" timestamp="1602449890751">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>

@@ -256,5 +256,8 @@ a {
   color: #ffffff;
   border: none;
 }
+.places-arrow .arrow {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
