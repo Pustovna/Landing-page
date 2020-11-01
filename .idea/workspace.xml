@@ -10,15 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="Desktop version: travel around, page with cards.">
-      <change afterPath="$PROJECT_DIR$/js/cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="hover card movement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,6 +112,7 @@
       <workItem from="1604156675588" duration="1276000" />
       <workItem from="1604158522173" duration="1540000" />
       <workItem from="1604164312970" duration="1820000" />
+      <workItem from="1604225141180" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -128,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602533067679</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hover card movement">
+      <created>1604225423275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604225423275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +148,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Desktop version: travel around, page with cards." />
-    <option name="LAST_COMMIT_MESSAGE" value="Desktop version: travel around, page with cards." />
+    <MESSAGE value="hover card movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="hover card movement" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="245" key="#Inspections" timestamp="1603997600728">
