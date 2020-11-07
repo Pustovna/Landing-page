@@ -226,6 +226,14 @@ a {
 }
 .places-arrow__left {
   margin-right: 60px;
+  background-image: url("../img/arrow-left.png");
+  width: 39px;
+  height: 28px;
+}
+.places-arrow__right {
+  background-image: url("../img/arrow-right.png");
+  width: 39px;
+  height: 28px;
 }
 .places-text {
   width: 30vw;

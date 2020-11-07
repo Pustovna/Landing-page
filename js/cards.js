@@ -1,17 +1,29 @@
-/** let arrows = document.querySelectorAll('.arrow')
+let placeArrow = document.querySelector('.places-arrow')
+let collection = document.querySelector('.places-cards') //переменная с таким классом уже есть, поменять
+let placesCard = collection.querySelectorAll('.places-card__back')
+let scroll = 0
+let cardLen = placesCard.length
+let cardWidth = $(placesCard).width()
+let placesCardsWidth = $(collection).width()
 
-for (let arrow of arrows) {
-
-    arrow.onclick = function() {
-        let side = arrow.dataset.arrow
-        let collection = document.querySelector('.places-cards')
-        if (side === 'right') {
-
-        } if (side === 'left') {
-
+placeArrow.onclick = function (e) {
+    let target = e.target
+        if (target.classList.contains('places-arrow__right') && scroll <= (cardWidth/2 * cardLen)) {
+            scroll = scroll + (cardWidth / 1.5 + 15)
+            $(collection).scrollLeft(scroll)
+            console.log('right' + scroll)
+            if (scroll > (cardWidth/2 * cardLen)) {
+                scroll = cardWidth/2 * cardLen
+            }
+        } else if (target.classList.contains('places-arrow__left') && scroll >= 0) {
+            scroll = scroll - (cardWidth / 1.5 + 15)
+            $(collection).scrollLeft(scroll)
+            console.log('left' + scroll)
+            if (scroll < 0) {
+                scroll = 0
+            }
         }
-    }
-} */
+}
 
 let cards = document.querySelectorAll('.places-card')
 
