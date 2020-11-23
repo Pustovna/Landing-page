@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Travel</title>
     <script
@@ -50,9 +52,10 @@
         </div>
       </div>
       <div class="places">
-        <div class="places-photo">
-          <div class="places-cards">
-            <div class="places-card">
+        <div class="places-photo splide" id="splide">
+          <div class="places-cards splide__track">
+            <div class="splide__list">
+            <div class="places-card splide__slide">
               <div class="places-card__1 places-card__back">
                 <div class="places-card__price">
                   <p>$700</p>
@@ -119,7 +122,7 @@
                 <p class="places-description__text">7 days tour</p>
               </div>
             </div>
-            <div class="places-card">
+            <div class="places-card splide__slide">
               <div class="places-card__back places-card__2">
                 <div class="places-card__price">
                   <p>$640</p>
@@ -187,7 +190,7 @@
                 <p class="places-description__text">7 days tour</p>
               </div>
             </div>
-            <div class="places-card">
+            <div class="places-card splide__slide">
               <div class="places-card__back places-card__3">
                 <div class="places-card__price">
                   <p>$560</p>
@@ -257,7 +260,7 @@
                 <p class="places-description__text">10 days tour</p>
               </div>
             </div>
-            <div class="places-card">
+            <div class="places-card splide__slide">
               <div class="places-card__back places-card__3">
                 <div class="places-card__price">
                   <p>$560</p>
@@ -323,11 +326,6 @@
               </div>
             </div>
           </div>
-          <div class="places-arrow">
-            <div class="arrow places-arrow__left" data-arrow="left">
-            </div>
-            <div class="arrow places-arrow__right" data-arrow="right">
-            </div>
           </div>
         </div>
         <div class="places-text">
@@ -345,6 +343,7 @@
         </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>
    <script src="./js/cards.js"></script>
   </body>
 </html>

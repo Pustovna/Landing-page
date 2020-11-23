@@ -186,7 +186,7 @@ a
         cursor: pointer
         border: 3px solid #fff
   &-description
-    display: none
+    display: flex
     justify-content: space-between
     margin-top: 20px
     &__text
@@ -194,20 +194,6 @@ a
       font-size: 24px
       color: $Gray-card
       padding-right: 10px
-  &-arrow
-    margin-top: 77px
-    margin-left: 9.37vw
-    display: flex
-    width: 56vw
-    &__left
-      margin-right: 60px
-      background-image: url("../img/arrow-left.png")
-      width: 39px
-      height: 28px
-    &__right
-      background-image: url("../img/arrow-right.png")
-      width: 39px
-      height: 28px
   &-text
     width: 30vw
     margin-top: 100px
@@ -233,7 +219,22 @@ a
     font-size: 23px
     color: $White
     border: none
-
+  &-arrows
+    position: absolute
+    top: 680px
+    left: 9vw
+    z-index: 2
   &-arrow
-    & .arrow
-      cursor: pointer
+    width: 39px
+    height: 29px
+    border: none
+    background-color: transparent
+    & svg
+      display: none
+  &-arrow__prev
+    background-image: url("../img/arrow-left.png")
+    margin-right: 65px
+  &-arrow__next
+    background-image: url("../img/arrow-right.png")
+
+
