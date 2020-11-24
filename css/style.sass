@@ -131,7 +131,6 @@ a
     overflow: hidden
     height: 600px
     align-items: flex-end
-    overflow-x: scroll
   &-card
     display: flex
     flex-direction: column
@@ -186,7 +185,7 @@ a
         cursor: pointer
         border: 3px solid #fff
   &-description
-    display: flex
+    display: none
     justify-content: space-between
     margin-top: 20px
     &__text
@@ -226,15 +225,18 @@ a
     z-index: 2
   &-arrow
     width: 39px
-    height: 29px
+    height: 27px
     border: none
     background-color: transparent
     & svg
       display: none
+    &:disabled
+      opacity: 0.4
   &-arrow__prev
     background-image: url("../img/arrow-left.png")
     margin-right: 65px
   &-arrow__next
-    background-image: url("../img/arrow-right.png")
+    background-image: url("../img/arrow-left.png")
+    transform: rotate(180deg)
 
 

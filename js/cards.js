@@ -1,20 +1,50 @@
 let cards = document.querySelectorAll('.places-card')
 
+// Splide settings
+let splide = new Splide( '#splide', {
+    classes: {
+        arrows: 'places-arrows',
+        arrow : 'places-arrow',
+        prev  : 'places-arrow__prev',
+        next  : 'places-arrow__next',
+    },
+    autoWidth: true,
+    perPage: 3,
+    focus  : 'center',
+    pagination: false,
+    drag: true,
+    updateOnMove: true,
+} ).mount();
+
+//управление видимостью рейтинга
+$(window).scroll(function() {
+    let desc = document.querySelectorAll('.places-description')
+    for (let des of desc) {
+        $(des).css('display', 'none')
+    }
+    for (let card of cards) {
+        $(card).css('padding-top', '48px')
+    }
+})  // скрытие рейтинга у всех карт при скролле
+
+let ratingMove = function () {
+    for (let i=0; i < cards.length; i++) {
+        let desc = cards[i].querySelector('.places-description')
+        if (cards[i].classList.contains('is-active')) {
+            $(desc).css('display', 'flex')
+            $(cards[i]).css('padding-top', '0')
+        } else {
+            $(desc).css('display', 'none')
+            $(cards[i]).css('padding-top', '50px')
+        }
+    }
+}
+
+splide.on( 'moved', function() {
+    ratingMove()
+    })
+
 for (let card of cards) {
-    /* $(card).mouseenter(function () {
-        let desc = card.querySelector('.places-description')
-        $(desc).css('display', 'flex')
-    }) // появление рейтинга при наведении
-
-    $(card).mouseleave(function ()
-    {
-        let desc = card.querySelector('.places-description')
-        $(desc).css('display', 'none')
-    }) // скрытие рейтинга при выходе мыши с карточки
-
-
-     */
-
 
     let rating = card.querySelector('.places-rating')
     let stars = rating.querySelectorAll('.star')
@@ -80,17 +110,4 @@ for (let card of cards) {
 }
 
 
-new Splide( '#splide', {
-    classes: {
-        arrows: 'places-arrows',
-        arrow : 'places-arrow',
-        prev  : 'places-arrow__prev',
-        next  : 'places-arrow__next',
-    },
-    type   : 'loop',
-    autoWidth: true,
-    perPage: 3,
-    focus  : 'center',
-    pagination: false,
-} ).mount();
 

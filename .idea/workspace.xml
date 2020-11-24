@@ -10,12 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="arrows working with Splide functional">
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="added showing rating when arrows click">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arrow-right.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cards.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,6 +153,21 @@
       <workItem from="1606127252436" duration="432000" />
       <workItem from="1606127689268" duration="1001000" />
       <workItem from="1606129083950" duration="1653000" />
+      <workItem from="1606131085340" duration="1653000" />
+      <workItem from="1606136556994" duration="1636000" />
+      <workItem from="1606138372219" duration="1558000" />
+      <workItem from="1606140179530" duration="1311000" />
+      <workItem from="1606142028160" duration="1522000" />
+      <workItem from="1606143836071" duration="1378000" />
+      <workItem from="1606145786458" duration="149000" />
+      <workItem from="1606146148061" duration="613000" />
+      <workItem from="1606151640648" duration="1683000" />
+      <workItem from="1606153447110" duration="1130000" />
+      <workItem from="1606155347617" duration="1060000" />
+      <workItem from="1606207641116" duration="1742000" />
+      <workItem from="1606209593198" duration="1234000" />
+      <workItem from="1606211420749" duration="1483000" />
+      <workItem from="1606213227713" duration="1600000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -189,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604751475028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="arrows working with Splide functional">
+      <created>1606131181145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606131181145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,13 +234,15 @@
     <MESSAGE value="hover card movement" />
     <MESSAGE value="added rating change" />
     <MESSAGE value="added work of arrows. &#10;this functional will be change" />
-    <option name="LAST_COMMIT_MESSAGE" value="added work of arrows. &#10;this functional will be change" />
+    <MESSAGE value="arrows working with Splide functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrows working with Splide functional" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="245" key="#Inspections" timestamp="1603997600728">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="530" y="263" key="#Inspections" timestamp="1606156388878">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="530" y="245" key="#Inspections/0.0.1792.1120@0.0.1792.1120" timestamp="1603997600728" />
+    <state x="530" y="263" key="#Inspections/0.23.1792.1097@0.23.1792.1097" timestamp="1606156388878" />
     <state x="496" y="237" key="#Intentions" timestamp="1601830963788">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -263,11 +287,11 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1602450683295" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1604751488002">
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1606131189382">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="496" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1604225607166" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1604751488002" />
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1606131189382" />
     <state x="728" y="437" key="scopes" timestamp="1604235523717">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>

@@ -139,7 +139,6 @@ a {
   overflow: hidden;
   height: 600px;
   align-items: flex-end;
-  overflow-x: scroll;
 }
 .places-card {
   display: flex;
@@ -208,7 +207,7 @@ a {
   border: 3px solid #fff;
 }
 .places-description {
-  display: flex;
+  display: none;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -255,19 +254,23 @@ a {
 }
 .places-arrow {
   width: 39px;
-  height: 29px;
+  height: 27px;
   border: none;
   background-color: transparent;
 }
 .places-arrow svg {
   display: none;
 }
+.places-arrow:disabled {
+  opacity: 0.4;
+}
 .places-arrow__prev {
   background-image: url("../img/arrow-left.png");
   margin-right: 65px;
 }
 .places-arrow__next {
-  background-image: url("../img/arrow-right.png");
+  background-image: url("../img/arrow-left.png");
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
