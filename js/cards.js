@@ -1,3 +1,5 @@
+import { videoSlider } from "./video.js"
+
 let cards = document.querySelectorAll('.places-card')
 
 // Splide settings
@@ -109,5 +111,4 @@ for (let card of cards) {
   }
 }
 
-
-
+videoSlider()

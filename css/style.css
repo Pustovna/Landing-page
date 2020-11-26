@@ -226,9 +226,15 @@ a {
   font-family: "NunitoSans-SemiBold", serif;
   font-size: 50px;
   margin-top: 10px;
-  margin-bottom: 30px;
   color: #091e40;
-  line-height: 1.22;
+}
+.places-text h1::after {
+  content: "";
+  background-image: url("../img/place-line.png");
+  width: 80px;
+  height: 6px;
+  display: flex;
+  margin-top: 40px;
 }
 .places-text p {
   font-family: "NunitoSans-Regular", serif;
@@ -271,6 +277,97 @@ a {
 .places-arrow__next {
   background-image: url("../img/arrow-left.png");
   transform: rotate(180deg);
+}
+
+.video-place {
+  display: flex;
+  flex-direction: column;
+  margin: 15vh 8vw 0 7vw;
+}
+.video-place-text {
+  text-align: center;
+  position: relative;
+}
+.video-place-text h1 {
+  font-family: "NunitoSans-SemiBold", serif;
+  color: #091e40;
+  font-size: 50px;
+}
+.video-place-text h1::after {
+  content: "";
+  background-image: url("../img/place-line.png");
+  width: 80px;
+  height: 6px;
+  display: flex;
+  margin: 2.5vh auto;
+}
+.video-place-text p {
+  font-family: "NunitoSans-Regular", serif;
+  color: #81858e;
+  font-size: 22px;
+}
+.video-place-vid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5vh;
+}
+.video-place-main {
+  position: relative;
+  overflow: hidden;
+  width: 65%;
+}
+.video-place-main__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-place-preview {
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 615px;
+  max-width: 535px;
+  width: 100%;
+}
+.video-place-preview-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-left: 15px;
+}
+.video-place-preview li {
+  height: 145px;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+.video-place-preview li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition-duration: 0.7s;
+}
+.video-place-preview li img {
+  height: 110px;
+  width: 200px;
+  margin: auto 15px auto 20px;
+}
+.video-place-preview li p {
+  margin: auto 20px auto 0;
+  font-family: "NunitoSans-SemiBold", serif;
+  color: #091e40;
+  font-size: 24px;
+}
+.video-place-preview li span {
+  font-family: "NunitoSans-Regular", serif;
+  color: #777c8a;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
