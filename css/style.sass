@@ -51,6 +51,10 @@ button
 a
   text-decoration: none
 
+p
+  line-height: 1.8
+
+
 .navbar
   width: 100%
   margin-top: 70px
@@ -144,28 +148,23 @@ a
       flex-direction: column
       justify-content: space-between
       color: $White
+      position: relative
     &__price
-      margin-top: 30px
+      position: absolute
       width: 110px
       height: 43px
       background-color: $Blue
       font-family: "NunitoSans-SemiBold",serif
       font-size: 24px
-      display: flex
+      top: 30px
       & p
-        margin: auto
+        text-align: center
     &__desc
-      margin-bottom: 30px
-      margin-left: 27px
+      position: absolute
+      bottom: 30px
+      left: 25px
       font-family: "NunitoSans-Regular",serif
       font-size: 20px
-    &__1
-      background-image: url("../img/card-3.png")
-      background-size: 100%
-    &__2
-      background-image: url("../img/card-2.png")
-    &__3
-      background-image: url("../img/card-1.png")
   &-rating
     display: flex
     & input
@@ -185,7 +184,7 @@ a
         cursor: pointer
         border: 3px solid #fff
   &-description
-    display: none
+    display: flex
     justify-content: space-between
     margin-top: 20px
     &__text
@@ -305,7 +304,7 @@ a
       &:hover
         background-color: $Gray-vid1
         cursor: pointer
-        transform: translateY(-10px)
+        transform: scale(0.9)
         transition-duration: 0.7s
       & img
         height: 110px
@@ -320,3 +319,44 @@ a
         font-family: "NunitoSans-Regular", serif
         color: #777c8a
         font-size: 20px
+
+.categories
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 13vh
+  &-text
+    position: relative
+    text-align: center
+    margin: 0 18.2vw
+    & h1
+      font-family: "NunitoSans-SemiBold", serif
+      color: $Black-text
+      font-size: 50px
+      &::after
+        content: ""
+        background-image: url("../img/place-line.png")
+        width: 80px
+        height: 6px
+        display: flex
+        margin: 2.5vh auto
+    & p
+      font-family: "NunitoSans-Regular", serif
+      color: $Gray-text
+      font-size: 22px
+  &-photo
+    margin-top: 1.35vh
+  &-cards
+    width: 100vw
+    overflow: hidden
+    & .is-active
+      & img
+        transform: translateY(-60px)
+        transition: transform, 400ms
+        box-shadow: 0 5px 50px gray
+  &-card
+    margin-right: 30px
+    padding-top: 150px
+.arrows-cat
+  left: 42vw
+  margin-top: 6vh

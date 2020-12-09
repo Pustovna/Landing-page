@@ -2,7 +2,7 @@ import { videoSlider } from "./video.js"
 
 let cards = document.querySelectorAll('.places-card')
 
-// Splide settings
+// Splide places settings
 let splide = new Splide( '#splide', {
     classes: {
         arrows: 'places-arrows',
@@ -18,14 +18,48 @@ let splide = new Splide( '#splide', {
     updateOnMove: true,
 } ).mount();
 
+//Splide categories settings
+new Splide( '#splide-categoreis', {
+    classes: {
+        arrows: 'places-arrows arrows-cat',
+        arrow : 'places-arrow',
+        prev  : 'places-arrow__prev',
+        next  : 'places-arrow__next',
+    },
+    type: 'loop',
+    autoWidth: true,
+    perPage: 3,
+    focus  : 'center',
+    pagination: false,
+    drag: true,
+    updateOnMove: true,
+} ).mount();
+
+//Splide comment settings
+new Splide( '#splide-comment', {
+    classes: {
+        arrows: 'places-arrows arrows-cat',
+        arrow : 'places-arrow',
+        prev  : 'places-arrow__prev',
+        next  : 'places-arrow__next',
+    },
+    type: 'loop',
+    autoWidth: true,
+    perPage: 3,
+    focus  : 'center',
+    pagination: false,
+    drag: true,
+    updateOnMove: true,
+} ).mount();
+
 //управление видимостью рейтинга
 $(window).scroll(function() {
     let desc = document.querySelectorAll('.places-description')
     for (let des of desc) {
-        $(des).css('display', 'none')
+       /* $(des).css('display', 'none') */
     }
-    for (let card of cards) {
-        $(card).css('padding-top', '48px')
+   for (let card of cards) {
+        $(card).css('transform', 'translateY(40px)')
     }
 })  // скрытие рейтинга у всех карт при скролле
 
@@ -33,11 +67,12 @@ let ratingMove = function () {
     for (let i=0; i < cards.length; i++) {
         let desc = cards[i].querySelector('.places-description')
         if (cards[i].classList.contains('is-active')) {
-            $(desc).css('display', 'flex')
-            $(cards[i]).css('padding-top', '0')
+            /*$(desc).css('display', 'flex') */
+            $(cards[i]).css('transform', 'translateY(-40px)')
+            $(cards[i]).css('transition', 'transform, 400ms')
         } else {
-            $(desc).css('display', 'none')
-            $(cards[i]).css('padding-top', '50px')
+            /* $(desc).css('display', 'none') */
+            $(cards[i]).css('transform', 'translateY(40px)')
         }
     }
 }
@@ -112,3 +147,4 @@ for (let card of cards) {
 }
 
 videoSlider()
+

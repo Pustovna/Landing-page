@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.8;
+}
+
 .navbar {
   width: 100%;
   margin-top: 70px;
@@ -155,34 +159,26 @@ a {
   flex-direction: column;
   justify-content: space-between;
   color: #ffffff;
+  position: relative;
 }
 .places-card__price {
-  margin-top: 30px;
+  position: absolute;
   width: 110px;
   height: 43px;
   background-color: #4497f3;
   font-family: "NunitoSans-SemiBold", serif;
   font-size: 24px;
-  display: flex;
+  top: 30px;
 }
 .places-card__price p {
-  margin: auto;
+  text-align: center;
 }
 .places-card__desc {
-  margin-bottom: 30px;
-  margin-left: 27px;
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
   font-family: "NunitoSans-Regular", serif;
   font-size: 20px;
-}
-.places-card__1 {
-  background-image: url("../img/card-3.png");
-  background-size: 100%;
-}
-.places-card__2 {
-  background-image: url("../img/card-2.png");
-}
-.places-card__3 {
-  background-image: url("../img/card-1.png");
 }
 .places-rating {
   display: flex;
@@ -207,7 +203,7 @@ a {
   border: 3px solid #fff;
 }
 .places-description {
-  display: none;
+  display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -350,7 +346,7 @@ a {
 .video-place-preview li:hover {
   background-color: #f0f0f0;
   cursor: pointer;
-  transform: translateY(-10px);
+  transform: scale(0.9);
   transition-duration: 0.7s;
 }
 .video-place-preview li img {
@@ -368,6 +364,57 @@ a {
   font-family: "NunitoSans-Regular", serif;
   color: #777c8a;
   font-size: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13vh;
+}
+.categories-text {
+  position: relative;
+  text-align: center;
+  margin: 0 18.2vw;
+}
+.categories-text h1 {
+  font-family: "NunitoSans-SemiBold", serif;
+  color: #091e40;
+  font-size: 50px;
+}
+.categories-text h1::after {
+  content: "";
+  background-image: url("../img/place-line.png");
+  width: 80px;
+  height: 6px;
+  display: flex;
+  margin: 2.5vh auto;
+}
+.categories-text p {
+  font-family: "NunitoSans-Regular", serif;
+  color: #81858e;
+  font-size: 22px;
+}
+.categories-photo {
+  margin-top: 1.35vh;
+}
+.categories-cards {
+  width: 100vw;
+  overflow: hidden;
+}
+.categories-cards .is-active img {
+  transform: translateY(-60px);
+  transition: transform, 400ms;
+  box-shadow: 0 5px 50px gray;
+}
+.categories-card {
+  margin-right: 30px;
+  padding-top: 150px;
+}
+
+.arrows-cat {
+  left: 42vw;
+  margin-top: 6vh;
 }
 
 /*# sourceMappingURL=style.css.map */

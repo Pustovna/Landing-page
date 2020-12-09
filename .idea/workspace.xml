@@ -10,8 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="added showing rating when arrows click">
-      <change afterPath="$PROJECT_DIR$/js/video.js" afterDir="false" />
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="added Featured videos with video-slider (file video.js)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
@@ -185,7 +184,44 @@
       <workItem from="1606307906194" duration="1498000" />
       <workItem from="1606309898480" duration="1531000" />
       <workItem from="1606311705348" duration="1287000" />
-      <workItem from="1606382973083" duration="738000" />
+      <workItem from="1606382973083" duration="1716000" />
+      <workItem from="1606384967180" duration="1571000" />
+      <workItem from="1606386872151" duration="1749000" />
+      <workItem from="1606389078768" duration="51000" />
+      <workItem from="1606394505478" duration="21000" />
+      <workItem from="1606557391352" duration="191000" />
+      <workItem from="1606652426692" duration="1094000" />
+      <workItem from="1606679268258" duration="706000" />
+      <workItem from="1606729133112" duration="1629000" />
+      <workItem from="1606730937376" duration="1018000" />
+      <workItem from="1606762597775" duration="1874000" />
+      <workItem from="1606812261459" duration="799000" />
+      <workItem from="1606814083552" duration="598000" />
+      <workItem from="1606816787269" duration="1166000" />
+      <workItem from="1606818593435" duration="590000" />
+      <workItem from="1606823380596" duration="590000" />
+      <workItem from="1606921774083" duration="142000" />
+      <workItem from="1606925275429" duration="554000" />
+      <workItem from="1606927087896" duration="594000" />
+      <workItem from="1606928910741" duration="598000" />
+      <workItem from="1606983158360" duration="580000" />
+      <workItem from="1606984269718" duration="333000" />
+      <workItem from="1606986260209" duration="843000" />
+      <workItem from="1606988117702" duration="579000" />
+      <workItem from="1606991182667" duration="1789000" />
+      <workItem from="1606992987002" duration="1676000" />
+      <workItem from="1607072513066" duration="430000" />
+      <workItem from="1607074520189" duration="598000" />
+      <workItem from="1607076332620" duration="472000" />
+      <workItem from="1607089822738" duration="6000" />
+      <workItem from="1607187260670" duration="1594000" />
+      <workItem from="1607189077328" duration="1586000" />
+      <workItem from="1607190889254" duration="1761000" />
+      <workItem from="1607192713157" duration="259000" />
+      <workItem from="1607361042248" duration="856000" />
+      <workItem from="1607362842111" duration="608000" />
+      <workItem from="1607520339046" duration="1286000" />
+      <workItem from="1607530197773" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -236,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606215108083</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added Featured videos with video-slider (file video.js)">
+      <created>1606384079185</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606384079185</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,14 +304,15 @@
     <MESSAGE value="added work of arrows. &#10;this functional will be change" />
     <MESSAGE value="arrows working with Splide functional" />
     <MESSAGE value="added showing rating when arrows click" />
-    <option name="LAST_COMMIT_MESSAGE" value="added showing rating when arrows click" />
+    <MESSAGE value="added Featured videos with video-slider (file video.js)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Featured videos with video-slider (file video.js)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="263" key="#Inspections" timestamp="1606156388878">
+    <state x="530" y="263" key="#Inspections" timestamp="1606730320238">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="530" y="245" key="#Inspections/0.0.1792.1120@0.0.1792.1120" timestamp="1603997600728" />
-    <state x="530" y="263" key="#Inspections/0.23.1792.1097@0.23.1792.1097" timestamp="1606156388878" />
+    <state x="530" y="263" key="#Inspections/0.23.1792.1097@0.23.1792.1097" timestamp="1606730320238" />
     <state x="496" y="237" key="#Intentions" timestamp="1601830963788">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -289,35 +333,35 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="548" y="357" width="760" height="665" key="EditFileWatcherDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1602449982075" />
-    <state width="1771" height="295" key="GridCell.Tab.0.bottom" timestamp="1606311442758">
+    <state width="1771" height="295" key="GridCell.Tab.0.bottom" timestamp="1607521635484">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623938" />
-    <state width="1771" height="295" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1606311442758" />
-    <state width="1771" height="295" key="GridCell.Tab.0.center" timestamp="1606311442757">
+    <state width="1771" height="295" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635484" />
+    <state width="1771" height="295" key="GridCell.Tab.0.center" timestamp="1607521635483">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623937" />
-    <state width="1771" height="295" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1606311442757" />
-    <state width="1771" height="295" key="GridCell.Tab.0.left" timestamp="1606311442757">
+    <state width="1771" height="295" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635483" />
+    <state width="1771" height="295" key="GridCell.Tab.0.left" timestamp="1607521635483">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623936" />
-    <state width="1771" height="295" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1606311442757" />
-    <state width="1771" height="295" key="GridCell.Tab.0.right" timestamp="1606311442758">
+    <state width="1771" height="295" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635483" />
+    <state width="1771" height="295" key="GridCell.Tab.0.right" timestamp="1607521635484">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623937" />
-    <state width="1771" height="295" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1606311442758" />
+    <state width="1771" height="295" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635484" />
     <state x="397" y="210" key="SettingsEditor" timestamp="1606232656488">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1606232656488" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1606215162014">
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1606384084904">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="496" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1604225607166" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1606215162014" />
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1606384084904" />
     <state x="728" y="437" key="scopes" timestamp="1604235523717">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
