@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="added Featured videos with video-slider (file video.js)">
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="added Travel categories page">
+      <change afterPath="$PROJECT_DIR$/css/arrows.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/vendors.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
@@ -27,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Sass File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -221,7 +223,27 @@
       <workItem from="1607361042248" duration="856000" />
       <workItem from="1607362842111" duration="608000" />
       <workItem from="1607520339046" duration="1286000" />
-      <workItem from="1607530197773" duration="1197000" />
+      <workItem from="1607530197773" duration="1695000" />
+      <workItem from="1607532170579" duration="1584000" />
+      <workItem from="1607534058793" duration="1802000" />
+      <workItem from="1607537464773" duration="1776000" />
+      <workItem from="1607539400758" duration="766000" />
+      <workItem from="1607617489288" duration="76000" />
+      <workItem from="1607795027833" duration="624000" />
+      <workItem from="1607796454160" duration="1967000" />
+      <workItem from="1607798465450" duration="1635000" />
+      <workItem from="1607800307738" duration="1121000" />
+      <workItem from="1607883150921" duration="1614000" />
+      <workItem from="1607885030531" duration="1034000" />
+      <workItem from="1607887309036" duration="601000" />
+      <workItem from="1607942815845" duration="980000" />
+      <workItem from="1607944621877" duration="451000" />
+      <workItem from="1607947590473" duration="1244000" />
+      <workItem from="1607949450606" duration="1191000" />
+      <workItem from="1607951319096" duration="1612000" />
+      <workItem from="1607953124610" duration="1639000" />
+      <workItem from="1607955033905" duration="1782000" />
+      <workItem from="1607956841671" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -279,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606384079185</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added Travel categories page">
+      <created>1607531760079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607531760079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +334,8 @@
     <MESSAGE value="arrows working with Splide functional" />
     <MESSAGE value="added showing rating when arrows click" />
     <MESSAGE value="added Featured videos with video-slider (file video.js)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Featured videos with video-slider (file video.js)" />
+    <MESSAGE value="added Travel categories page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Travel categories page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="263" key="#Inspections" timestamp="1606730320238">
@@ -317,14 +347,18 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="496" y="237" key="#Intentions/0.23.1792.1097@0.23.1792.1097" timestamp="1601830963788" />
-    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606128822604">
+    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607539811374">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1606128822604" />
+    <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1607539811374" />
     <state x="716" y="284" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1602449511332">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="716" y="284" key="#com.intellij.ide.macro.MacrosDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1602449511332" />
+    <state x="634" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607796528141">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="634" y="325" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1607796528141" />
     <state x="661" y="408" width="474" height="483" key="#com.intellij.tools.ToolEditorDialog" timestamp="1602450681829">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -333,43 +367,47 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="548" y="357" width="760" height="665" key="EditFileWatcherDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1602449982075" />
-    <state width="1771" height="295" key="GridCell.Tab.0.bottom" timestamp="1607521635484">
+    <state width="1771" height="295" key="GridCell.Tab.0.bottom" timestamp="1607944321782">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623938" />
-    <state width="1771" height="295" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635484" />
-    <state width="1771" height="295" key="GridCell.Tab.0.center" timestamp="1607521635483">
+    <state width="1771" height="295" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1607944321782" />
+    <state width="1771" height="295" key="GridCell.Tab.0.center" timestamp="1607944321781">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623937" />
-    <state width="1771" height="295" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635483" />
-    <state width="1771" height="295" key="GridCell.Tab.0.left" timestamp="1607521635483">
+    <state width="1771" height="295" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1607944321781" />
+    <state width="1771" height="295" key="GridCell.Tab.0.left" timestamp="1607944321781">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623936" />
-    <state width="1771" height="295" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635483" />
-    <state width="1771" height="295" key="GridCell.Tab.0.right" timestamp="1607521635484">
+    <state width="1771" height="295" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1607944321781" />
+    <state width="1771" height="295" key="GridCell.Tab.0.right" timestamp="1607944321782">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="310" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604133623937" />
-    <state width="1771" height="295" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1607521635484" />
+    <state width="1771" height="295" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1607944321782" />
     <state x="397" y="210" key="SettingsEditor" timestamp="1606232656488">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1606232656488" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1606384084904">
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2" timestamp="1607531764990">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="496" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1604225607166" />
-    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1606384084904" />
+    <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607531764990" />
+    <state x="694" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607884352744">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="694" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607884352744" />
     <state x="728" y="437" key="scopes" timestamp="1604235523717">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="728" y="437" key="scopes/0.23.1792.1097@0.23.1792.1097" timestamp="1604235523717" />
-    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1604238257181">
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1607533706587">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="561" y="250" width="670" height="691" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1604232460039" />
-    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1604238257181" />
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1607533706587" />
   </component>
 </project>

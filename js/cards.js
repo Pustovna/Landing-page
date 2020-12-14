@@ -5,10 +5,10 @@ let cards = document.querySelectorAll('.places-card')
 // Splide places settings
 let splide = new Splide( '#splide', {
     classes: {
-        arrows: 'places-arrows',
-        arrow : 'places-arrow',
-        prev  : 'places-arrow__prev',
-        next  : 'places-arrow__next',
+        arrows: 'all-arrows places-arrows',
+        arrow : 'all-arrow',
+        prev  : 'all-arrow__prev',
+        next  : 'all-arrow__next',
     },
     autoWidth: true,
     perPage: 3,
@@ -21,10 +21,10 @@ let splide = new Splide( '#splide', {
 //Splide categories settings
 new Splide( '#splide-categoreis', {
     classes: {
-        arrows: 'places-arrows arrows-cat',
-        arrow : 'places-arrow',
-        prev  : 'places-arrow__prev',
-        next  : 'places-arrow__next',
+        arrows: 'all-arrows arrows-cat',
+        arrow : 'all-arrow',
+        prev  : 'all-arrow__prev',
+        next  : 'all-arrow__next',
     },
     type: 'loop',
     autoWidth: true,
@@ -38,18 +38,19 @@ new Splide( '#splide-categoreis', {
 //Splide comment settings
 new Splide( '#splide-comment', {
     classes: {
-        arrows: 'places-arrows arrows-cat',
-        arrow : 'places-arrow',
-        prev  : 'places-arrow__prev',
-        next  : 'places-arrow__next',
+        arrows: 'all-arrows arrows-com',
+        arrow : 'all-arrow',
+        prev  : 'all-arrow__prev arrows-com__prev',
+        next  : 'all-arrow__next arrows-com__next',
+        pagination: 'splide__pagination comment__pagination',
+        page: 'splide__pagination__page comment__pag__page',
     },
-    type: 'loop',
-    autoWidth: true,
-    perPage: 3,
-    focus  : 'center',
-    pagination: false,
+    type: 'fade',
+    rewind: true,
+    perPage: 1,
+    pagination: true,
     drag: true,
-    updateOnMove: true,
+    speed: 0,
 } ).mount();
 
 //управление видимостью рейтинга

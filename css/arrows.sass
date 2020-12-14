@@ -1,0 +1,42 @@
+// all arrows style
+.all-arrows
+  position: absolute
+
+.all-arrow
+  width: 39px
+  height: 27px
+  border: none
+  background-color: transparent
+  & svg
+    display: none
+  &:disabled
+    opacity: 0.4
+  &__prev
+    background-image: url("../img/arrow-left.png")
+    margin-right: 65px
+  &__next
+    background-image: url("../img/arrow-left.png")
+    transform: rotate(180deg)
+
+//places arrows style
+.places-arrows
+  top: 680px
+  left: 9vw
+
+
+//category arrows style
+.arrows-cat
+  margin-top: 6vh
+  left: 45vw
+  top: 680px
+
+//comment arrows style
+.arrows-com
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 20%
+  width: auto
+  z-index: 2
+  display: flex
+  &__prev
+    margin-right: 400px

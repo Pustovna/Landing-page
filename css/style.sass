@@ -1,3 +1,6 @@
+@import "arrows"
+@import "vendors"
+
 @font-face
   font-family: "Nunito-Regular"
   src: url('../fonts/Nunito-Regular.ttf')
@@ -223,26 +226,7 @@ p
     font-size: 23px
     color: $White
     border: none
-  &-arrows
-    position: absolute
-    top: 680px
-    left: 9vw
-    z-index: 2
-  &-arrow
-    width: 39px
-    height: 27px
-    border: none
-    background-color: transparent
-    & svg
-      display: none
-    &:disabled
-      opacity: 0.4
-  &-arrow__prev
-    background-image: url("../img/arrow-left.png")
-    margin-right: 65px
-  &-arrow__next
-    background-image: url("../img/arrow-left.png")
-    transform: rotate(180deg)
+
 
 .video-place
   display: flex
@@ -357,6 +341,109 @@ p
   &-card
     margin-right: 30px
     padding-top: 150px
-.arrows-cat
-  left: 42vw
-  margin-top: 6vh
+
+
+.comment
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 21vh
+  &-text
+    position: relative
+    & h1
+      font-family: "NunitoSans-SemiBold", serif
+      font-size: 50px
+      color: $Black-text
+      &::after
+        content: ""
+        background-image: url("../img/place-line.png")
+        width: 80px
+        height: 6px
+        display: flex
+        margin: 2.5vh auto
+  &-cards
+    width: 100vw
+    overflow: hidden
+    margin-top: 35px
+  &-card
+    text-align: center
+    &__text
+      max-width: 1070px
+      min-height: 150px
+      margin: auto
+      font-family: "NunitoSans-Regular", serif
+      font-size: 26px
+      color: $Black-text
+    & img
+      margin-top: 75px
+    &__name
+      font-family: "NunitoSans-SemiBold", serif
+      font-size: 24px
+      color: $Black-text
+      margin-bottom: 0
+    &__metier
+      font-family: "NunitoSans-Regular", serif
+      font-size: 20px
+      color: $Black-text
+      margin-top: 10px
+  &__pag__page
+    width: 40px
+    height: 3px
+    background-color: $Violet
+    border-radius: 0
+    margin-right: 15px
+    &.is-active
+      background-color: $Blue
+      width: 60px
+      transform: none
+
+.booking
+  height: 100vh
+  background-image: url("../img/formback.png")
+  background-repeat: no-repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  text-align: center
+  max-height: 900px
+  &-text
+    color: $White
+    & h2
+      margin-top: 310px
+      text-transform: uppercase
+      font-family: "NunitoSans-SemiBold", serif
+      font-size: 38px
+      margin-bottom: 3vh
+    & p
+      font-family: "NunitoSans-ExtraBold", serif
+      font-size: 60px
+      margin-top: 0
+      margin-bottom: 8vh
+  &-form
+    display: inline-flex
+    margin: 0 auto
+    & select
+      appearance: none
+      background-image: url("../img/formarrow.png"), url("../img/formarrow2.png")
+      background-size: 10px 9px
+      background-repeat: no-repeat
+      background-position: left 305px top 25px, left 305px top 40px
+    &__block
+      height: 70px
+      width: 350px
+      font-family: "NunitoSans-SemiBold", serif
+      font-size: 16px
+      color: $White
+      outline: none
+      background-color: rgba(255, 255, 255, 0.2)
+      border: none
+      padding: 25px 45px
+      margin-right: 55px
+    &__date
+      padding: 0 40px 0 40px
+      width: 270px
+    &__button
+      background: $Blue-button
+
+
+@include placehold($White)
