@@ -1,0 +1,9 @@
+.arrows-com {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  position: absolute;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=arrows.css.map */
