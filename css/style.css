@@ -37,7 +37,7 @@
 .arrows-com {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20%;
+  bottom: 49%;
   width: auto;
   z-index: 2;
   display: flex;
@@ -460,6 +460,7 @@ p {
   width: 100vw;
   overflow: hidden;
   margin-top: 35px;
+  margin-bottom: 250px;
 }
 .comment-card {
   text-align: center;
@@ -487,6 +488,9 @@ p {
   color: #091e40;
   margin-top: 10px;
 }
+.comment__pagination {
+  bottom: 248px;
+}
 .comment__pag__page {
   width: 40px;
   height: 3px;
@@ -501,14 +505,13 @@ p {
 }
 
 .booking {
-  height: 100vh;
+  height: 900px;
   background-image: url("../img/formback.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-height: 900px;
 }
 .booking-text {
   color: #ffffff;
@@ -571,6 +574,58 @@ p {
 
 :-ms-input-placeholder {
   color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 780px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: "NunitoSans-Regular", serif;
+  font-size: 18px;
+}
+.footer-links li {
+  list-style-type: none;
+}
+.footer-soc {
+  display: flex;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.footer__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #4497f3;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+}
+.footer__icon i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+.footer-text {
+  font-family: "NunitoSans-SemiBold", serif;
+  font-size: 15px;
+}
+.footer-text span {
+  margin-left: 25px;
+  color: #e1e1e1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -365,6 +365,7 @@ p
     width: 100vw
     overflow: hidden
     margin-top: 35px
+    margin-bottom: 250px
   &-card
     text-align: center
     &__text
@@ -386,6 +387,8 @@ p
       font-size: 20px
       color: $Black-text
       margin-top: 10px
+  &__pagination
+    bottom: 248px
   &__pag__page
     width: 40px
     height: 3px
@@ -398,14 +401,13 @@ p
       transform: none
 
 .booking
-  height: 100vh
+  height: 900px
   background-image: url("../img/formback.png")
   background-repeat: no-repeat
   background-size: cover
   display: flex
   flex-direction: column
   text-align: center
-  max-height: 900px
   &-text
     color: $White
     & h2
@@ -445,5 +447,48 @@ p
     &__button
       background: $Blue-button
 
-
 @include placehold($White)
+
+.footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 300px
+  &-links
+    display: flex
+    justify-content: space-around
+    width: 100%
+    max-width: 780px
+    margin-top: 70px
+    margin-bottom: 30px
+    font-family: "NunitoSans-Regular", serif
+    font-size: 18px
+    & li
+      list-style-type: none
+  &-soc
+    display: flex
+    width: 100%
+    max-width: 280px
+    margin-top: 20px
+    margin-bottom: 80px
+  &__icon
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: $Blue
+    color: $White
+    font-size: 25px
+    text-align: center
+    position: relative
+    margin-right: 20px
+    & i
+      position: absolute
+      top: 50%
+      transform: translateY(-50%) translateX(-50%)
+      left: 50%
+  &-text
+    font-family: "NunitoSans-SemiBold", serif
+    font-size: 15px
+    & span
+      margin-left: 25px
+      color: $Gray-foot

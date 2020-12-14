@@ -16,6 +16,10 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/32de560475.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -33,8 +37,8 @@
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#video">Video</a></li>
-              <li><a href="destinations">Destinations</a></li>
-              <li><a href="booking">Booking</a></li>
+              <li><a href="#destinations">Destinations</a></li>
+              <li><a href="#booking">Booking</a></li>
             </ul>
           </div>
           <button class="navbar-nav__button">Sign in</button>
@@ -370,7 +374,7 @@
           </div>
         </div>
       </div>
-      <div class="categories">
+      <div class="categories" id="destinations">
         <div class="categories-text">
           <h1>Travel categories</h1>
           <p>
@@ -471,7 +475,7 @@
           </div>
         </div>
       </div>
-      <div class="booking">
+      <div class="booking" id="booking">
         <div class="booking-text">
           <h2>We will se you</h2>
           <p>Enjoy 30% Off On First Trip</p>
@@ -490,12 +494,42 @@
               <option value="Breakfast">Breakfast</option>
               <option value="Cheap">Cheap</option>
             </select>
-            <input type="text" placeholder="Date" required class="booking-form__block booking-form__date" onfocus="(this.type='date')" />
-            <input type="submit" value="Book Now" class="booking-form__block booking-form__button" />
+            <input
+              type="text"
+              placeholder="Date"
+              required
+              class="booking-form__block booking-form__date"
+              onfocus="(this.type='date')"
+            />
+            <input
+              type="submit"
+              value="Book Now"
+              class="booking-form__block booking-form__button"
+            />
           </form>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <ul class="footer-links">
+        <li><a>Home</a></li>
+        <li><a>Video</a></li>
+        <li><a>Booking</a></li>
+        <li><a>Contact</a></li>
+        <li><a>Pricing</a></li>
+        <li><a>Privacy policy</a></li>
+      </ul>
+      <div class="footer-text">
+        <strong>Copiryting 2014-2020</strong
+        ><span>Rhea - Travel Around The World</span>
+      </div>
+      <div class="footer-soc">
+        <div class="footer__icon"><i class="fab fa-youtube"></i></div>
+        <div class="footer__icon"><i class="fab fa-facebook-f"></i></div>
+        <div class="footer__icon"><i class="fab fa-twitter"></i></div>
+        <div class="footer__icon"><i class="fas fa-envelope"></i></div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>
     <script src="./js/cards.js" type="module"></script>
   </body>
