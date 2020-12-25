@@ -60,14 +60,27 @@ $(window).scroll(function () {
   }
 }); // скрытие рейтинга у всех карт при скролле
 
-let ratingMove = function () {
+const move = function (elem) {
+  if (elem.classList.contains("is-active")) {
+    $(elem).css("transform", "translateY(-40px)");
+    $(elem).css("transition", "transform, 400ms");
+  } else {
+    $(elem).css("transform", "translateY(40px)");
+  }
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target && e.target.classList.contains('img-card')) {
+    const elem = e.target
+    const parent = elem.closest('.places-card')
+    parent.classList.toggle('is-active')
+    move(parent)
+  }
+})
+
+const ratingMove = function () {
   for (let i = 0; i < cards.length; i++) {
-    if (cards[i].classList.contains("is-active")) {
-      $(cards[i]).css("transform", "translateY(-40px)");
-      $(cards[i]).css("transition", "transform, 400ms");
-    } else {
-      $(cards[i]).css("transform", "translateY(40px)");
-    }
+    move(cards[i]);
   }
 };
 

@@ -825,11 +825,6 @@ p {
   border-radius: 0;
   margin-right: 15px;
 }
-.comment__pag__page.is-active {
-  background-color: #4497f3;
-  width: 60px;
-  transform: none;
-}
 
 @media (max-width: 1100px) {
   .comment-card__name {
