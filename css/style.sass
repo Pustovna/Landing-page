@@ -1,5 +1,6 @@
 @import "arrows"
 @import "vendors"
+@import "animation"
 
 @font-face
   font-family: "Nunito-Regular"
@@ -41,6 +42,7 @@ html
   margin: 0
   padding: 0
   box-sizing: border-box
+  overflow-x: hidden
 
 body
   margin: 0
@@ -60,12 +62,13 @@ p
 
 .navbar
   width: 100%
-  margin-top: 70px
+  padding-top: 70px
 .navbar-nav
   display: flex
   justify-content: space-between
   padding-right: 8.2%
   padding-left: 8.2%
+  align-items: center
   &__link
     width: 100%
     display: flex
@@ -92,10 +95,97 @@ p
     font-family: "Nunito-SemiBold",serif
     color: $Blue
     font-size: 20px
+    @include hover(0 0 40px $Gray-nav)
+    &:hover
+      background-color: $Blue
+      color: $White
+@media (max-width: 1000px)
+  .navbar-nav
+    padding: 0 40px
+    &__link
+      justify-content: center
+      & ul
+        padding: 0
+    &__link ul li a
+      padding: 0 10px
+    &-nav__logo
+      & img
+        width: 150px
+        height: auto
+    &__button
+      height: 45px
+@media (max-width: 768px)
+  .navbar
+    display: none
+    &-toggle
+      position: fixed
+      width: 33px
+      height: 26px
+      z-index: 3
+      top: 50px
+      right: 50px
+      &::before,
+      &::after,
+      & span
+        content: ""
+        position: absolute
+        display: inline-block
+        width: 100%
+        height: 4px
+        background: $Gray-text
+        border-radius: 5px
+        transition-duration: 400ms
+      &::before
+        top: 0
+        transform-origin: top left
+      &::after
+        bottom: 0
+        transform-origin: bottom left
+      & span
+        top: 50%
+        transform: translateY(-50%)
+      &__active
+        & span
+          opacity: 0
+        &::before
+          transform: rotate(45deg)
+        &::after
+          transform: rotate(-45deg)
+    &.is-active
+      display: flex
+      position: fixed
+      justify-content: center
+      background: $White
+      z-index: 3
+      top: 0
+    &-nav
+      padding: 0
+      flex-direction: column
+      &__logo
+        margin-right: 40px
+      &__button
+        margin-bottom: 50px
+    &-nav__link
+      width: 100%
+      & ul
+        margin-right: 0
+        display: flex
+        flex-direction: column
+      & li
+        padding: 20px 0
+        & a
+          width: 80vw
+@media (min-width: 769px)
+  .navbar-toggle
+    display: none
+
+
+
+
 
 .travel
   display: flex
-  padding-left: 8.2%
+  margin-left: 8.2%
   justify-content: space-between
   &-text
     padding-top: 20vh
@@ -106,6 +196,7 @@ p
       color: $Black-text
       line-height: 1
       margin: 0
+      @include sizeSmallScreen
     & p
       font-family: "NunitoSans-Regular",serif
       font-size: 22px
@@ -120,12 +211,33 @@ p
       font-family: "NunitoSans-SemiBold",serif
       font-size: 20px
       color: $White
+      @include hover(0 0 40px $Gray-nav)
   &-img
     margin-top: 5.5vh
     & img
       height: auto
       width: 100%
       max-width: 1040px
+@media (max-width: 1400px)
+  .travel-text
+    padding-top: 10vh
+@media (max-width: 1058px)
+  .travel
+    position: relative
+    &-text
+      max-width: 100%
+      text-align: center
+      z-index: 2
+      margin-right: 8vw
+      & h1
+        margin: 30px
+    &-img
+      position: absolute
+      right: 0
+      & img
+        max-height: 500px
+        width: auto
+        opacity: 30%
 
 .places
   display: flex
@@ -204,7 +316,7 @@ p
       font-size: 50px
       margin-top: 10px
       color: $Black-text
-      //line-height: 1.22
+      @include sizeSmallScreen
       &::after
         content: ""
         background-image: url("../img/place-line.png")
@@ -226,6 +338,47 @@ p
     font-size: 23px
     color: $White
     border: none
+    @include hover(0 0 40px $Gray-nav)
+@media (max-width: 1400px)
+  .places-text
+    margin-top: 0
+    transition-duration: 1s
+@media (max-width: 1200px)
+  .places
+    flex-direction: column
+    align-items: center
+    margin: 70px 8vw
+    &-text
+      order: -1
+      text-align: center
+      width: 100%
+      margin: auto
+      & h1
+        margin: 2.5vh auto
+        &::after
+          margin: 2.5vh auto
+      & p
+        margin: 1em 0
+    &-photo
+      width: 95vw
+      margin-top: 5vh
+@media (max-width: 700px)
+  .places-card__back,
+  .places-card__back img
+    width: 290px
+    height: 390px
+  .places-description
+    justify-content: center
+    flex-direction: column
+  .places-rating,
+  .places-description__text
+    justify-content: center
+    text-align: center
+  .places-card
+    height: 450px
+  .places-cards
+    height: 500px
+
 
 
 .video-place
@@ -239,6 +392,7 @@ p
     font-family: "NunitoSans-SemiBold", serif
     color: $Black-text
     font-size: 50px
+    @include sizeSmallScreen
     &::after
       content: ""
       background-image: url("../img/place-line.png")
@@ -258,8 +412,10 @@ p
     margin-top: 5vh
   &-main
     position: relative
+    width: 100%
+    padding-bottom: 40%
+    height: 0
     overflow: hidden
-    width: 65%
     &__iframe
       position: absolute
       top: 0
@@ -267,11 +423,13 @@ p
       width: 100%
       height: 100%
       border: 0
+      outline-width: 0
   &-preview
     display: flex
     overflow-y: scroll
     overflow-x: hidden
-    max-height: 615px
+    height: 0
+    padding-bottom: 40%
     max-width: 535px
     width: 100%
     &-list
@@ -280,7 +438,7 @@ p
       margin-top: 0
       padding-left: 15px
     & li
-      height: 145px
+      min-height: 145px
       display: flex
       padding-top: 15px
       padding-bottom: 15px
@@ -293,7 +451,7 @@ p
       & img
         height: 110px
         width: 200px
-        margin: auto 15px auto 20px
+        margin: 0 15px 0 20px
       & p
         margin: auto 20px auto 0
         font-family: "NunitoSans-SemiBold", serif
@@ -303,6 +461,43 @@ p
         font-family: "NunitoSans-Regular", serif
         color: #777c8a
         font-size: 20px
+@media (max-width: 1400px)
+  .video-place
+    margin: 20vh 8vw 0
+    &-vid
+      flex-direction: column
+    &-preview
+      overflow-y: auto
+      overflow-x: visible
+      max-width: 100%
+      padding-bottom: 0
+      height: 100%
+      &-list
+        flex-direction: row
+        margin-top: 20px
+        & li
+          flex-direction: column
+          & p
+            margin: 0 15px
+            text-align: center
+            font-size: 18px
+          & span
+            font-size: 18px
+  .video-place-main
+    padding-bottom: 55%
+@media (max-width: 550px)
+  .video-place-preview-list
+    & li
+      margin-right: 0
+    & li img
+      width: 100px
+      height: auto
+    & li p
+      font-size: 16px
+    & li span
+      font-size: 14px
+  .video-place
+    margin-bottom: 40px
 
 .categories
   display: flex
@@ -317,6 +512,7 @@ p
       font-family: "NunitoSans-SemiBold", serif
       color: $Black-text
       font-size: 50px
+      @include sizeSmallScreen
       &::after
         content: ""
         background-image: url("../img/place-line.png")
@@ -341,19 +537,26 @@ p
   &-card
     margin-right: 30px
     padding-top: 150px
-
+@media (max-width: 1000px)
+  .categories-card
+    & img
+      max-width: 250px
+  .categories-text
+    margin: 0 8vw
 
 .comment
   display: flex
   flex-direction: column
   align-items: center
-  margin-top: 21vh
+  margin: 21vh 8vw auto
   &-text
     position: relative
     & h1
       font-family: "NunitoSans-SemiBold", serif
       font-size: 50px
       color: $Black-text
+      text-align: center
+      @include sizeSmallScreen
       &::after
         content: ""
         background-image: url("../img/place-line.png")
@@ -371,10 +574,10 @@ p
     &__text
       max-width: 1070px
       min-height: 150px
-      margin: auto
       font-family: "NunitoSans-Regular", serif
       font-size: 26px
       color: $Black-text
+      margin: auto
     & img
       margin-top: 75px
     &__name
@@ -399,6 +602,24 @@ p
       background-color: $Blue
       width: 60px
       transform: none
+@media (max-width: 1100px)
+  .comment-card
+    &__name
+      font-size: 20px
+    &__metier
+      font-size: 16px
+    &__text
+      margin: 40px
+      font-size: 1.2em
+@media (max-width: 620px)
+  .comment-card
+    &__text
+      min-height: 306px
+      display: flex
+      margin: 0 8vw
+      align-items: center
+
+
 
 .booking
   height: 900px
@@ -408,10 +629,12 @@ p
   display: flex
   flex-direction: column
   text-align: center
+  justify-content: center
+  padding: 0 9vw
   &-text
     color: $White
+    text-align: center
     & h2
-      margin-top: 310px
       text-transform: uppercase
       font-family: "NunitoSans-SemiBold", serif
       font-size: 38px
@@ -422,14 +645,17 @@ p
       margin-top: 0
       margin-bottom: 8vh
   &-form
-    display: inline-flex
+    display: flex
     margin: 0 auto
+    flex-direction: row
     & select
       appearance: none
+      -webkit-appearance: none
       background-image: url("../img/formarrow.png"), url("../img/formarrow2.png")
       background-size: 10px 9px
       background-repeat: no-repeat
-      background-position: left 305px top 25px, left 305px top 40px
+      background-position: left 90% top 25px, left 90% top 40px
+      margin-bottom: 20px
     &__block
       height: 70px
       width: 350px
@@ -440,20 +666,51 @@ p
       background-color: rgba(255, 255, 255, 0.2)
       border: none
       padding: 25px 45px
-      margin-right: 55px
+      margin: 0 20px
     &__date
       padding: 0 40px 0 40px
       width: 270px
+      margin: 0 20px 20px 20px
     &__button
       background: $Blue-button
-
+      @include hover(none)
+      &:hover
+        cursor: pointer
 @include placehold($White)
+@media (max-width: 1000px)
+  .booking-form
+    text-align: center
+  .booking-text
+    & h2
+      font-size: 30px
+    & p
+      font-size: 50px
+      line-height: 60px
+  .booking-form__block select,
+  .booking-form__button select,
+  .booking-form__date select
+    width: 100%
+@media (max-width: 460px)
+  .booking-form__block
+    width: 310px
+    margin-right: 0
+    margin-left: 0
+  .booking-form__date
+    width: 230px
+  .booking-text p
+    margin-bottom: 30px
+    font-size: 40px
+@media (max-width: 375px)
+  .booking-form__block
+    width: 270px
+  .booking-form__date
+    width: 190px
 
 .footer
   display: flex
   flex-direction: column
   align-items: center
-  height: 300px
+  min-height: 300px
   &-links
     display: flex
     justify-content: space-around
@@ -465,6 +722,8 @@ p
     font-size: 18px
     & li
       list-style-type: none
+      & a
+        color: $Black-foot
   &-soc
     display: flex
     width: 100%
@@ -492,3 +751,16 @@ p
     & span
       margin-left: 25px
       color: $Gray-foot
+@media (max-width: 822px)
+  .footer-links
+    flex-direction: column
+    text-align: center
+    padding: 0
+    margin-top: 30px
+    & li
+      padding: 10px
+  .footer-text
+    display: flex
+    flex-direction: column
+    text-align: center
+    width: 80%

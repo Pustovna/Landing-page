@@ -35,19 +35,20 @@
           </div>
           <div class="navbar-nav__link">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#video">Video</a></li>
-              <li><a href="#destinations">Destinations</a></li>
-              <li><a href="#booking">Booking</a></li>
+              <li><a class="nav-link" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#video">Video</a></li>
+              <li><a class="nav-link" href="#destinations">Destinations</a></li>
+              <li><a class="nav-link" href="#booking">Booking</a></li>
             </ul>
           </div>
           <button class="navbar-nav__button">Sign in</button>
         </nav>
       </div>
+      <div class="navbar-toggle js-toggle"><span class="js-toggle"></span></div>
     </header>
     <main>
-      <div class="travel">
-        <div class="travel-text">
+      <section class="travel">
+        <div class="travel-text" id="home">
           <h1>
             Travel around the world
           </h1>
@@ -60,8 +61,8 @@
         <div class="travel-img">
           <img src="img/Girls.png" alt="Girls with car" />
         </div>
-      </div>
-      <div class="places">
+      </section>
+      <section class="places">
         <div class="places-photo splide" id="splide">
           <div class="places-cards splide__track">
             <div class="splide__list">
@@ -318,8 +319,8 @@
           </p>
           <button class="places__button">Explore</button>
         </div>
-      </div>
-      <div class="video-place" id="video">
+      </section>
+      <section class="video-place" id="video">
         <div class="video-place-text">
           <h1>Featured videos</h1>
           <p>
@@ -342,6 +343,7 @@
               allowfullscreen
               width="1070"
               height="615"
+              title="video"
             ></iframe>
           </div>
           <div class="video-place-preview">
@@ -373,8 +375,8 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="categories" id="destinations">
+      </section>
+      <section class="categories" id="destinations">
         <div class="categories-text">
           <h1>Travel categories</h1>
           <p>
@@ -404,8 +406,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="comment">
+      </section>
+      <section class="comment">
         <div class="comment-text">
           <h1>
             Traveller’s experiences
@@ -460,8 +462,7 @@
                   “Curabitur posuere ullamcorper pulvinar. Donec dignissim
                   bibendum leo, at faucibus enim aliquam eu. Nullam quis
                   pulvinar diam, ac elementum urna. Integer id vehicula tortor,
-                  nec pulvinar libero. Ut elit elit, fringilla a nisi ut,
-                  dapibus eleifend quam.”
+                  nec pulvinar libero.”
                 </p>
                 <img src="img/proff.png" alt />
                 <p class="comment-card__name">
@@ -474,8 +475,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="booking" id="booking">
+      </section>
+      <section class="booking" id="booking">
         <div class="booking-text">
           <h2>We will se you</h2>
           <p>Enjoy 30% Off On First Trip</p>
@@ -508,26 +509,26 @@
             />
           </form>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <ul class="footer-links">
-        <li><a>Home</a></li>
-        <li><a>Video</a></li>
-        <li><a>Booking</a></li>
-        <li><a>Contact</a></li>
-        <li><a>Pricing</a></li>
-        <li><a>Privacy policy</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Privacy policy</a></li>
       </ul>
       <div class="footer-text">
         <strong>Copiryting 2014-2020</strong
         ><span>Rhea - Travel Around The World</span>
       </div>
       <div class="footer-soc">
-        <div class="footer__icon"><i class="fab fa-youtube"></i></div>
-        <div class="footer__icon"><i class="fab fa-facebook-f"></i></div>
-        <div class="footer__icon"><i class="fab fa-twitter"></i></div>
-        <div class="footer__icon"><i class="fas fa-envelope"></i></div>
+        <a class="footer__icon" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a class="footer__icon" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a class="footer__icon" href="https://wwww.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a class="footer__icon" href="mailto:a.hitrinevich@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>

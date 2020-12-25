@@ -1,0 +1,11 @@
+$Gray-nav: #cbcaca
+
+@mixin hover($shadow)
+    transition-duration: 400ms
+    &:hover
+      box-shadow: $shadow
+      transform: scale(0.95)
+
+@mixin sizeSmallScreen()
+  @media (max-width: 1058px)
+    font-size: 35px

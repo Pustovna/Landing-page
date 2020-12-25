@@ -1,4 +1,5 @@
 // all arrows style
+
 .all-arrows
   position: absolute
 
@@ -14,6 +15,7 @@
   &__prev
     background-image: url("../img/arrow-left.png")
     margin-right: 65px
+
   &__next
     background-image: url("../img/arrow-left.png")
     transform: rotate(180deg)
@@ -22,13 +24,24 @@
 .places-arrows
   top: 680px
   left: 9vw
-
+@media (max-width: 1200px)
+  .places-arrows
+    left: 50%
+    transform: translateX(-50%)
+@media (max-width: 700px)
+  .places-arrows
+    top: 550px
 
 //category arrows style
 .arrows-cat
   margin-top: 6vh
-  left: 45vw
+  left: 50%
+  transform: translateX(-50%)
   top: 680px
+@media (max-width: 1000px)
+  .arrows-cat
+    top: 100%
+
 
 //comment arrows style
 .arrows-com
@@ -40,3 +53,8 @@
   display: flex
   &__prev
     margin-right: 400px
+@media (max-width: 590px)
+  .all-arrows
+    bottom: 45%
+  .arrows-com__prev
+    margin-right: 50vw
