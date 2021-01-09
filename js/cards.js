@@ -1,4 +1,12 @@
 import { videoSlider } from "./video.js";
+import { popup } from "./popup.js";
+
+
+window.addEventListener('DOMContentLoaded', () => {
+videoSlider();
+popup();
+});
+
 
 let cards = document.querySelectorAll(".places-card");
 
@@ -67,16 +75,16 @@ const move = function (elem) {
   } else {
     $(elem).css("transform", "translateY(40px)");
   }
-}
+};
 
-document.addEventListener('click', (e) => {
-  if (e.target && e.target.classList.contains('img-card')) {
-    const elem = e.target
-    const parent = elem.closest('.places-card')
-    parent.classList.toggle('is-active')
-    move(parent)
+document.addEventListener("click", (e) => {
+  if (e.target && e.target.classList.contains("img-card")) {
+    const elem = e.target;
+    const parent = elem.closest(".places-card");
+    parent.classList.toggle("is-active");
+    move(parent);
   }
-})
+});
 
 const ratingMove = function () {
   for (let i = 0; i < cards.length; i++) {
@@ -151,7 +159,7 @@ for (let card of cards) {
   };
 }
 
-videoSlider();
+
 
 function toggler() {
   const toggle = document.querySelector(".js-toggle");
@@ -167,4 +175,21 @@ document.addEventListener("click", (e) => {
   ) {
     toggler();
   }
+});
+
+
+//scroll to up
+const arrowUp = document.querySelector(".to-up");
+
+window.addEventListener('scroll', () => {
+  const height = document.documentElement.clientHeight
+  if (window.pageYOffset > height) {
+    arrowUp.style.display = "flex";
+  } else {
+    arrowUp.style.display = "none";
+  }
+});
+
+arrowUp.addEventListener('click', () => {
+  window.scrollTo(0, 0);
 });
