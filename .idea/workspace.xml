@@ -10,12 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="added popup and up button">
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/arrows.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/arrows.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +319,7 @@
       <workItem from="1610220385106" duration="1195000" />
       <workItem from="1610222191937" duration="1664000" />
       <workItem from="1610224002928" duration="463000" />
-      <workItem from="1610224670393" duration="276000" />
+      <workItem from="1610224670393" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -430,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610223946433</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1610225281877</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610225281877</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +465,8 @@
     <MESSAGE value="fixed mobile version" />
     <MESSAGE value="added listener" />
     <MESSAGE value="added popup and up button" />
-    <option name="LAST_COMMIT_MESSAGE" value="added popup and up button" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="263" key="#Inspections" timestamp="1606730320238">
@@ -526,12 +530,12 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1606232656488" />
-    <state x="496" y="312" key="Vcs.Push.Dialog.v2" timestamp="1610224054197">
+    <state x="496" y="312" key="Vcs.Push.Dialog.v2" timestamp="1610225290364">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="496" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1604225607166" />
     <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607978985960" />
-    <state x="496" y="312" key="Vcs.Push.Dialog.v2/0.25.1792.1095@0.25.1792.1095" timestamp="1610224054197" />
+    <state x="496" y="312" key="Vcs.Push.Dialog.v2/0.25.1792.1095@0.25.1792.1095" timestamp="1610225290364" />
     <state x="694" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607974866763">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
