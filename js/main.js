@@ -1,10 +1,12 @@
 import { videoSlider } from "./video.js";
 import { popup } from "./popup.js";
+import { forms } from "./forms.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
 videoSlider();
 popup();
+forms();
 });
 
 

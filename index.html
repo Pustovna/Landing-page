@@ -334,9 +334,9 @@
           </p>
         </div>
         <div class="video-place-vid">
-          <div class="video-place-main">
+          <div class="video-place-cards">
             <iframe
-              class="video-place-main__iframe"
+              class="video-place-cards__iframe"
               src="https://www.youtube.com/embed/JiPkDbjbN8w"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -497,6 +497,7 @@
             </select>
             <input
               type="text"
+              name="date"
               placeholder="Date"
               required
               class="booking-form__block booking-form__date"
@@ -543,7 +544,9 @@
     <!-- Button to up -->
     <div class="to-up"><i class="fas fa-arrow-up"></i></div>
 
-    <!-- Modal window -->
+    <!-- Modal windows -->
+
+    <!-- Login popup -->
     <div class="popup">
       <div class="popup_dialog">
         <div class="popup_content">
@@ -555,16 +558,17 @@
               <label for="password">Password</label>
               <input class="form-control form_input" id="password" name="password" required type="text">
               <button class="popup_button" name="submit" type="submit">Sign in</button>
-              <a class="popup_notice" href="#">Forgot password or login?</a>
-              <a class="popup_notice" href="#">Create an account</a>
             </form>
           </div>
+          <a class="popup_notice" href="#">Forgot password or login?</a>
+          <a class="popup_notice" href="#">Create an account</a>
+          <span class="status-message"></span>
         </div>
       </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>
-    <script src="./js/cards.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

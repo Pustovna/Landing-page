@@ -409,7 +409,7 @@ p
     justify-content: space-between
     width: 100%
     margin-top: 5vh
-  &-main
+  &-cards
     position: relative
     width: 100%
     padding-bottom: 40%
@@ -482,7 +482,7 @@ p
             font-size: 18px
           & span
             font-size: 18px
-  .video-place-main
+  .video-place-cards
     padding-bottom: 55%
 @media (max-width: 550px)
   .video-place-preview-list
@@ -784,6 +784,15 @@ p
     display: flex
     justify-content: center
     align-items: center
+    flex-direction: column
+    & .status-message
+      display: none
+      position: absolute
+      top: 10%
+      color: #4497f3
+      font-weight: bold
+      font-size: 14px
+      text-align: center
   &_close
     position: absolute
     top: -20px
@@ -797,18 +806,21 @@ p
       right: 20px
       color: $Blue
   &_form
+    width: 70%
     & .form
       display: flex
       flex-direction: column
       text-align: center
       font-family: NunitoSans-Regular, serif
-      color: $Gray-text
+      color: $Gray-nav
       &-control
         margin: 2px 0 15px
         border-radius: 0
         border: 1px solid $Blue
         outline: none
         height: 20px
+        padding: 5px 10px
+        width: auto
   &_button
     margin: 5px 0 15px
     background: $Blue-button
@@ -819,3 +831,5 @@ p
   &_notice
     margin-bottom: 5px
     font-size: 14px
+    color: $Gray-text
+

@@ -32,6 +32,7 @@ export const popup = () => {
     };
     modals('.navbar-nav__button', '.popup', '.popup_close');
     modals('.travel-text__button', '.popup', '.popup_close');
+    modals('.places__button', '.popup', '.popup_close');
 };
 
 export default popup;
