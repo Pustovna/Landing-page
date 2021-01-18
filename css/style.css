@@ -909,6 +909,9 @@ p {
   background-position: left 90% top 25px, left 90% top 40px;
   margin-bottom: 20px;
 }
+.booking-form select option {
+  color: black;
+}
 .booking-form__block {
   height: 70px;
   width: 350px;
@@ -925,6 +928,7 @@ p {
   padding: 0 40px 0 40px;
   width: 270px;
   margin: 0 20px 20px 20px;
+  color: Black;
 }
 .booking-form__button {
   background: #3984f3;
@@ -946,11 +950,7 @@ p {
   color: #ffffff;
 }
 
-:-moz-placeholder {
-  color: #ffffff;
-}
-
-:-ms-input-placeholder {
+::-ms-input-placeholder {
   color: #ffffff;
 }
 

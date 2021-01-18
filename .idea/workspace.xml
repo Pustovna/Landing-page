@@ -10,16 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="fixed links">
-      <change afterPath="$PROJECT_DIR$/js/forms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
+    <list default="true" id="2fb21eb4-124a-495d-9e3b-edb0668eb1fd" name="Default Changelist" comment="new function: form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/vendors.sass" beforeDir="false" afterPath="$PROJECT_DIR$/css/vendors.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/forms.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +336,11 @@
       <workItem from="1610664592406" duration="538000" />
       <workItem from="1610665651514" duration="1593000" />
       <workItem from="1610667485416" duration="1683000" />
-      <workItem from="1610669292982" duration="337000" />
+      <workItem from="1610669292982" duration="1039000" />
+      <workItem from="1610673020779" duration="183000" />
+      <workItem from="1610744112314" duration="421000" />
+      <workItem from="1610744836732" duration="1610000" />
+      <workItem from="1610746712247" duration="474000" />
     </task>
     <task id="LOCAL-00001" summary="Desktop version: travel around, page with cards.">
       <created>1602533067679</created>
@@ -460,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610383613080</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="new function: form">
+      <created>1610669704285</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1610669704285</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +502,8 @@
     <MESSAGE value="added popup and up button" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="fixed links" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed links" />
+    <MESSAGE value="new function: form" />
+    <option name="LAST_COMMIT_MESSAGE" value="new function: form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="263" key="#Inspections" timestamp="1606730320238">
@@ -502,10 +511,6 @@
     </state>
     <state x="530" y="245" key="#Inspections/0.0.1792.1120@0.0.1792.1120" timestamp="1603997600728" />
     <state x="530" y="263" key="#Inspections/0.23.1792.1097@0.23.1792.1097" timestamp="1606730320238" />
-    <state x="496" y="237" key="#Intentions" timestamp="1601830963788">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="496" y="237" key="#Intentions/0.23.1792.1097@0.23.1792.1097" timestamp="1601830963788" />
     <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607539811374">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -558,12 +563,12 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1606232656488" />
-    <state x="496" y="312" key="Vcs.Push.Dialog.v2" timestamp="1610383619867">
+    <state x="496" y="312" key="Vcs.Push.Dialog.v2" timestamp="1610669709011">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="496" y="294" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1604225607166" />
     <state x="496" y="311" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1607978985960" />
-    <state x="496" y="312" key="Vcs.Push.Dialog.v2/0.25.1792.1095@0.25.1792.1095" timestamp="1610383619867" />
+    <state x="496" y="312" key="Vcs.Push.Dialog.v2/0.25.1792.1095@0.25.1792.1095" timestamp="1610669709011" />
     <state x="694" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607974866763">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
