@@ -20,8 +20,7 @@ export const forms = () => {
             const formData = new FormData(item);
 
             postData('server.php', formData)
-                .then(res => {
-                    console.log(res);
+                .then(() => {
                     message.textContent = 'Success';
                     message.style.display = 'block';
                     setTimeout(() => {
@@ -42,4 +41,3 @@ export const forms = () => {
     });
 };
 
-export default forms;

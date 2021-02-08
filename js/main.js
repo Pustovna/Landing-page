@@ -184,7 +184,7 @@ document.addEventListener("click", (e) => {
 const arrowUp = document.querySelector(".to-up");
 
 window.addEventListener('scroll', () => {
-  const height = document.documentElement.clientHeight
+  const height = document.documentElement.clientHeight;
   if (window.pageYOffset > height) {
     arrowUp.style.display = "flex";
   } else {
